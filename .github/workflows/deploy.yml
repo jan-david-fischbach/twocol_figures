@@ -31,7 +31,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install TeX Live
-        run: sudo apt-get install -y texlive-fonts-extra latexmk
+        run: sudo apt-get install -y texlive-fonts-extra latexmk xelatex
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - uses: actions/setup-node@v4
