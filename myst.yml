@@ -1,0 +1,30 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  exports:
+  - format: tex+pdf
+    template: physical_review_journals
+    output: exports/article.pdf
+    formatting: twocolumn
+    paper_size: a4paper
+    article: article.md
+    id: my-document-export
+  
+  downloads:
+  - id: my-document-export
+    title: A PDF of this document
+
+  title: Figure Formatting in Two-Column Articles using MyST
+  toc:
+    - file: article.md
+  
+  authors: 
+  - name: Jan David Fischbach
+    affiliations:
+      - Karlsruhe Institute of Technology (KIT), Germany
+    email: fischbach@kit.edu
+    orcid: 0009-0003-8765-8920
+    github: jan-david-fischbach
+    
+site:
+  template: article-theme
